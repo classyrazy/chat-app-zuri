@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: #02314b;
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+}
+.main-con {
+  width: 100%;
+  margin: auto;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+.chatbot-pic img {
+  width: 200px;
+}
+.chats {
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+  padding-top: 10px;
+  flex-direction: column;
+  border-radius: 3px;
+  flex: 10;
+  display: flex;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Roboto", sans-serif;
+}
+.chats::-webkit-scrollbar {
+  width: 1em;
+}
+.chats::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.chats::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+.other-msg{
+    width: auto;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background: #0a8acf;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.my-msg{
+    width: auto;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 5px;
+    background-color: #c8c8c8;
+    color: #000;   
+    display: inline-block;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+}
+.main-form{
+    margin-top: -20px;
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+}
+input{
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    margin: auto;
+    min-width: 200px;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+@media(max-width: 998px){
+    
+    .chats{
+        width: 100%;
+    }
+
+}
+@media(max-width: 600px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .my-msg{
+        width: 80%;
+    }
+    .other-msg{
+        width: 80%;
+    }
+
+}
