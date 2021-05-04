@@ -198,13 +198,6 @@ a {
 	height: 40px;
 	width: 100%;
 }
-
-.join-main select {
-	font-size: 16px;
-	padding: 5px;
-	height: 40px;
-	width: 100%;
-}
 .btn-con{
     width: 20%;
     margin-left: auto;
@@ -233,5 +226,19 @@ a {
 	}
 	.chat-form-container {
 		padding: 15px 5px;
+	}
+	.join-container {
+		max-width: 100%;
+		margin: 0;
+		max-height: 100vh;
+
+	}
+	.join-header{
+		height: 20vh;
+		border-radius: 0;
+	}
+	.join-main {
+		max-height: 100vh;
+		height: 80vh;
 	}
 }
