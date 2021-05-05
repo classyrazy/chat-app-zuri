@@ -17,25 +17,33 @@
 
 <body>
     <div class="join-container">
-        <header class="join-header">
-            <h1><i class="fas fa-comments"></i> Zuri Chat App</h1>
-        </header>
-        <main class="join-main">
-            <form action="chat.html">
-                <div class="form-control">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
-                </div>
-                <div class="form-control">
-                    <label for="room">Space</label>
-                    <input type="text" name="space" id="space" placeholder="Enter Space Name..." required />
-                </div>
-                <div class="btn-con">
-                    <button type="submit" class="btn">Join</button>
-                </div>
-            </form>
-        </main>
+        <section class="main-part">
+            <header class="join-header">
+                <h1><i class="fas fa-comments"></i> Zuri Chat App</h1>
+            </header>
+            <main class="join-main">
+                <form action="chat.html">
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter username..." required />
+                    </div>
+                    <div class="form-control">
+                        <label for="room">Space</label>
+                        <input type="text" name="space" id="space" placeholder="Enter Space Name..." required />
+                    </div>
+                    <div class="btn-con">
+                        <button type="submit" class="btn">Join</button>
+                    </div>
+                </form>
+            </main>
+        </section>
+        <section class="extra-part">
+            <h1>Join Now</h1>
+            <img src="./undraw_Social_user_re_8cky.svg" alt="">
+        </section>
     </div>
+    <script src="join.js"></script>
+    <script src="chat.js"></script>
 </body>
 
 </html>

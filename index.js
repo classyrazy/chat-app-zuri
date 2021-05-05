@@ -63,6 +63,10 @@ io.on("connection", socket => {
             message: "Welcome to Zuri Chat App",
             time: moment().format("h:mm a")
         })
+        socket.on("typing", (data)=>{
+            console.log(data)
+            socket.broadcast.to(user.space).emit("typing",data)
+        })
 
 
         socket.on("msg-chat", data => {
